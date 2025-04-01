@@ -1,0 +1,4 @@
+class UserModule {
+
+}
+export = UserModule

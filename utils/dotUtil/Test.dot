@@ -1,0 +1,17 @@
+
+digraph Test {
+Init
+Login
+Main
+Pop
+Game
+
+Init -> Login [label = toLogin]
+Login -> Main [label = toMain]
+Pop -> Main [label = btn_close]
+Game -> Main [label = btn_toMain]
+Main -> Pop [label = btn_Pop]
+Main -> Game [label = btn_toGame]
+
+}
+        
