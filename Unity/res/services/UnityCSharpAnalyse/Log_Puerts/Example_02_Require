@@ -1,0 +1,153 @@
+C# >   |   JsEnv -> .ctor
+C# >   |   JsEnv -> Eval ( chunk :  require('main') , chunkName : chunk )
+C# >   |   |   PuertsDLL -> EvalChecked ( code :  require('main') , path : chunk )
+C# >   |   |   |   [?] -> Eval
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 65 , paramLen : 1 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# >   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 2 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 7 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 7 )
+C# >   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# >   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : main.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : main.js )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> BooleanTranslator ( jsEnvIdx : 0 , obj : True )
+C# >   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushBoolean ( jsEnvIdx : 0 , i : True )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetBoolean ( b : True )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 2 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 66 , paramLen : 2 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 2 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# >   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 2 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 7 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 7 )
+C# >   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# >   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : main.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : main.js )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   |   GeneralSetterManager -> StringTranslator ( jsEnvIdx : 0 , obj : main.js )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushString ( jsEnvIdx : 0 , i : main.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   SetValueToByRefArgumentImpl -> SetString ( str : main.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> SetStringToOutValue ( str : main.js )
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> StringTranslator ( jsEnvIdx : 0 , obj : const module1 = require('module1'); module1.callMe('from john'); )
+C# >   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushString ( jsEnvIdx : 0 , i : const module1 = require('module1'); module1.callMe('from john'); )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetString ( str : const module1 = require('module1'); module1.callMe('from john'); )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> ReturnString ( str : const module1 = require('module1'); module1.callMe('from john'); )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 65 , paramLen : 1 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# >   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 2 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 10 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 10 )
+C# >   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# >   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : module1.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : module1.js )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> BooleanTranslator ( jsEnvIdx : 0 , obj : True )
+C# >   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushBoolean ( jsEnvIdx : 0 , i : True )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetBoolean ( b : True )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 2 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 66 , paramLen : 2 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 2 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# >   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 2 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 10 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 10 )
+C# >   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# >   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : module1.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : module1.js )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   |   GeneralSetterManager -> StringTranslator ( jsEnvIdx : 0 , obj : module1.js )
+C# >   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushString ( jsEnvIdx : 0 , i : module1.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   SetValueToByRefArgumentImpl -> SetString ( str : module1.js )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> SetStringToOutValue ( str : module1.js )
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> StringTranslator ( jsEnvIdx : 0 , obj : console.log('module1 loading'); function callMe(msg) { console.log('callMe called', msg); } exports.callMe = callMe; )
+C# >   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushString ( jsEnvIdx : 0 , i : console.log('module1 loading'); function callMe(msg) { console.log('callMe called', msg); } exports.callMe = callMe; )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetString ( str : console.log('module1 loading'); function callMe(msg) { console.log('callMe called', msg); } exports.callMe = callMe; )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> ReturnString ( str : console.log('module1 loading'); function callMe(msg) { console.log('callMe called', msg); } exports.callMe = callMe; )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 47 , paramLen : 1 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 15 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 15 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 47 , paramLen : 1 )
+C# >   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# >   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# >   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# >   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# >   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 23 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 23 )
+C# >   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# >   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   |   JsEnv -> Dispose
+C# >   |   |   JsEnv -> Dispose ( dispose : True )
+C# >   |   JsEnv -> Dispose ( dispose : True )

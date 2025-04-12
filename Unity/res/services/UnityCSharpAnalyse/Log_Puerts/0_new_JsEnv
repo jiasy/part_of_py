@@ -1,0 +1,701 @@
+C# >   |   [?] -> .ctor
+C# >   |   |   DefaultLoader -> .ctor
+C# >   |   |   JsEnv -> .ctor ( debugPort : -1 )
+C# >   |   |   |   PuertsDLL -> GetApiLevel
+C# >   |   |   |   ObjectPool -> .ctor
+C# >   |   |   |   |   ObjectPool -> AddToFreeList ( obj :  )
+C# >   |   |   |   |   |   Slot -> .ctor ( next : -2 , obj :  )
+C# >   |   |   |   TypeRegister -> .ctor
+C# >   |   |   |   |   TypeRegister -> AddAssemblieByName ( name : mscorlib, )
+C# >   |   |   |   |   TypeRegister -> AddAssemblieByName ( name : System, )
+C# >   |   |   |   |   TypeRegister -> AddAssemblieByName ( name : System.Core, )
+C# >   |   |   |   |   GenericDelegateFactory -> .cctor
+C# >   |   |   |   |   |   PrimitiveTypeTranslate -> Init
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   |   |   |   StaticTranslate`1 -> ReplaceDefault
+C# >   |   |   |   GenericDelegateFactory -> .ctor
+C# >   |   |   |   GeneralGetterManager -> .ctor
+C# >   |   |   |   GeneralSetterManager -> .ctor
+C# >   |   |   |   PuertsDLL -> SetGeneralDestructor
+C# >   |   |   |   TypeRegister -> InitArrayTypeId
+C# >   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# >   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__2
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : .ctor )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 0 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : -1 , fullName : System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 )
+C# >   |   |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# >   |   |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetAllTypes ( exclude_generic_definition : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> GetEnumerator
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> Create
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> IsSupportedMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetExtensionMethodsOf>b__13_4
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Equals )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 0 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : Equals , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Equals )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 1 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : Equals , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetHashCode )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 2 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : GetHashCode , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetType )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 3 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : GetType , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ToString )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 4 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : ToString , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ReferenceEquals )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 5 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 0 , name : ReferenceEquals , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 6 )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 0 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : .ctor )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 1 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 0 , fullName : System.Array, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 )
+C# >   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# >   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   [?] -> GetEnumerator
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> Create
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetMethodAndOverrideMethod>b__1
+C# >   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : CreateInstance )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 7 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : CreateInstance , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : CopyTo )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 8 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : CopyTo , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Clone )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 9 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Clone , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : BinarySearch )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 10 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : BinarySearch , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Copy )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 11 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Copy , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetLongLength )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 12 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetLongLength , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetValue )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 13 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetValue , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : IndexOf )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 14 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : IndexOf , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LastIndexOf )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 15 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : LastIndexOf , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Reverse )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 16 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Reverse , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : SetValue )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 17 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : SetValue , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Sort )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 18 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Sort , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetEnumerator )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 19 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetEnumerator , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetLength )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 20 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetLength , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetLowerBound )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 21 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetLowerBound , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetUpperBound )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 22 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : GetUpperBound , isStatic : False )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Clear )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 23 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Clear , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ConstrainedCopy )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 24 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : ConstrainedCopy , isStatic : True )
+C# >   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Initialize )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 25 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 1 , name : Initialize , isStatic : False )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_LongLength )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 26 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : LongLength , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_IsFixedSize )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 27 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : IsFixedSize , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_IsReadOnly )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 28 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : IsReadOnly , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_IsSynchronized )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 29 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : IsSynchronized , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_SyncRoot )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 30 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : SyncRoot , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_Length )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 31 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : Length , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_Rank )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 32 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : Rank , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 33 )
+C# >   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 1 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 0 )
+C# >   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 1 , fullName : __puerts.Array )
+C# >   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 34 )
+C# >   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 2 , name : Length , isStatic : False , dontDelete : True )
+C# >   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 35 )
+C# >   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 2 , name : get_Item , isStatic : False )
+C# >   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 36 )
+C# >   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 2 , name : set_Item , isStatic : False )
+C# >   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 37 )
+C# >   |   |   |   PuertsDLL -> SetGlobalFunction ( name : __tgjsRegisterTickHandler )
+C# >   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 38 )
+C# >   |   |   |   PuertsDLL -> SetGlobalFunction ( name : __tgjsGetGenericMethod )
+C# >   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 39 )
+C# >   |   |   |   PuertsDLL -> SetGlobalFunction ( name : __tgjsLoadType )
+C# >   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 40 )
+C# >   |   |   |   PuertsDLL -> SetGlobalFunction ( name : __tgjsGetNestedTypes )
+C# >   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 41 )
+C# >   |   |   |   PuertsDLL -> SetGlobalFunction ( name : __tgjsGetLoader )
+C# >   |   |   |   PuertsDLL -> SetModuleResolver ( jsEnvIdx : 0 )
+C# >   |   |   |   PuertsDLL -> SetPushJSFunctionArgumentsCallback ( jsEnvIdx : 0 )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/init.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/init.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/init.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/init.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/init.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/init.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/init.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/init.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/init.mjs )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/log.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/log.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/log.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/log.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# >   |   |   |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 17 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 17 )
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( className : UnityEngine.Debug , isQualifiedName : False )
+C# >   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__2
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : .ctor )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 2 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 0 , fullName : UnityEngine.Debug, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null )
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> GetEnumerator
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> Create
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetMethodAndOverrideMethod>b__1
+C# >   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : DrawLine )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 42 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : DrawLine , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : DrawRay )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 43 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : DrawRay , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Break )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 44 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : Break , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : DebugBreak )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 45 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : DebugBreak , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ExtractStackTraceNoAlloc )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 46 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : ExtractStackTraceNoAlloc , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Log )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 47 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : Log , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogFormat )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 48 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogFormat , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogError )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 49 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogError , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogErrorFormat )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 50 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogErrorFormat , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ClearDeveloperConsole )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 51 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : ClearDeveloperConsole , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogException )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 52 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogException , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogWarning )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 53 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogWarning , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogWarningFormat )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 54 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogWarningFormat , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Assert )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 55 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : Assert , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : AssertFormat )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 56 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : AssertFormat , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogAssertion )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 57 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogAssertion , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : LogAssertionFormat )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 58 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 3 , name : LogAssertionFormat , isStatic : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_unityLogger )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 59 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 3 , name : unityLogger , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_developerConsoleVisible )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 60 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : set_developerConsoleVisible )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 61 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 3 , name : developerConsoleVisible , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_isDebugBuild )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 62 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 3 , name : isDebugBuild , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_logger )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 63 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 3 , name : logger , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 64 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 3 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/cjsload.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/cjsload.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/cjsload.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 41 , paramLen : 0 )
+C# >   |   |   |   |   |   |   |   JsEnv -> GetLoader ( paramLen : 0 )
+C# >   |   |   |   |   |   |   |   |   GeneralSetterManager -> AnyTranslator ( jsEnvIdx : 0 , obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__2
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : .ctor )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 3 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 0 , fullName : Puerts.DefaultLoader, com.tencent.puerts.core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToDictionary
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> GetEnumerator
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> Create
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> MoveNext
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetMethodAndOverrideMethod>b__1
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : FileExists )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 65 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 4 , name : FileExists , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToList
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <RegisterType>b__3
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : ReadFile )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 66 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 4 , name : ReadFile , isStatic : False )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> TwoIntToLong ( a : 0 , b : 67 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 4 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# >   |   |   |   |   |   |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> Add ( obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> AddToFreeList ( obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   Slot -> .ctor ( next : -2 , obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> set_Item
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> TryInsert
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : Puerts.DefaultLoader )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetNativeObject ( classID : 4 )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/modular.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/modular.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/modular.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/modular.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/modular.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/modular.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/modular.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/modular.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/modular.mjs )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/csharp.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/csharp.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/csharp.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/csharp.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# >   |   |   |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 6 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 6 )
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( className : System , isQualifiedName : False )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# >   |   |   |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 13 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 13 )
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( className : System.Object , isQualifiedName : False )
+C# >   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 40 , paramLen : 1 )
+C# >   |   |   |   |   |   |   |   JsEnv -> GetNestedTypes ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# >   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# >   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 13 )
+C# >   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 13 )
+C# >   |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( className : System.Object , isQualifiedName : False )
+C# >   |   |   |   |   |   |   |   |   StaticTranslate`1 -> DefaultPush ( jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# >   |   |   |   |   |   |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   |   [?] -> TryGetValue
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> FindEntry
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> Add ( obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> AddToFreeList ( obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   Slot -> .ctor ( next : -2 , obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> set_Item
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> TryInsert
+C# >   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : System.Type[] )
+C# >   |   |   |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetNativeObject ( classID : 2 )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 34 , paramLen : 0 )
+C# >   |   |   |   |   |   |   |   TypeRegister -> ArrayLength ( argumentsLen : 0 )
+C# >   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# >   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 4 )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/events.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/events.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/events.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/events.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/events.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/events.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/events.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/events.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/events.mjs )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/timer.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/timer.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/timer.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/timer.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# >   |   |   |   |   |   |   Utils -> LongToTwoInt
+C# >   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 37 , paramLen : 1 )
+C# >   |   |   |   |   |   |   |   JsEnv -> RegisterTickHandler ( paramLen : 1 )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/promises.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/promises.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/promises.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/promises.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/promises.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/promises.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/promises.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/promises.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/promises.mjs )
+C# >   |   |   |   JsEnv -> ExecuteModule ( filename : puerts/nodepatch.mjs )
+C# >   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   StaticCallbacks -> ModuleResolverCallback ( identifer : puerts/nodepatch.mjs , jsEnvIdx : 0 )
+C# >   |   |   |   |   |   |   JsEnv -> ResolveModuleContent ( identifer : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> FileExists ( filepath : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   |   |   DefaultLoader -> ReadFile ( filepath : puerts/nodepatch.mjs )
+C# >   |   |   |   |   |   |   |   |   DefaultLoader -> PathToUse ( filepath : puerts/nodepatch.mjs )

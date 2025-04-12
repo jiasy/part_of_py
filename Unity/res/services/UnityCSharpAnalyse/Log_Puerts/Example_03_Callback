@@ -1,0 +1,471 @@
+C# > JsEnv -> .ctor
+C# > [?] -> UsingAction
+C# > |   [?] -> RegisterAction
+C# > |   |   DelegateCreatorTree -> Add
+C# > |   |   |   DelegateCreatorTree -> FindNode ( createIfNotExisted : True )
+C# > JsEnv -> Eval ( chunk : js 代码
+C# > |   PuertsDLL -> EvalChecked ( code : js 代码
+C# > |   |   [?] -> Eval
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# > |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# > |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 10 )
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 10 )
+C# > |   |   |   |   |   |   |   TypeRegister -> GetType ( className : PuertsTest , isQualifiedName : False )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# > |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# > |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 20 )
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 20 )
+C# > |   |   |   |   |   |   |   TypeRegister -> GetType ( className : PuertsTest.TestClass , isQualifiedName : False )
+C# > |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : .ctor )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 0 , fullName : PuertsTest.TestClass, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null )
+C# > |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# > |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : AddEventCallback1 )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 5 , name : AddEventCallback1 , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : RemoveEventCallback1 )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 5 , name : RemoveEventCallback1 , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : AddEventCallback2 )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 5 , name : AddEventCallback2 , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Trigger )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 5 , name : Trigger , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Foo )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 5 , name : Foo , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 5 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 40 , paramLen : 1 )
+C# > |   |   |   |   |   JsEnv -> GetNestedTypes ( paramLen : 1 )
+C# > |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 20 )
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 20 )
+C# > |   |   |   |   |   |   |   TypeRegister -> GetType ( className : PuertsTest.TestClass , isQualifiedName : False )
+C# > |   |   |   |   |   |   StaticTranslate`1 -> DefaultPush ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__24_1
+C# > |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : System.Type[] )
+C# > |   |   |   |   |   |   |   |   |   [?] -> TryGetValue
+C# > |   |   |   |   |   |   |   |   |   |   [?] -> FindEntry
+C# > |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : System.Type[] )
+C# > |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> Equals ( o1 : System.Type[] , o2 : System.Type[] )
+C# > |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetNativeObject ( classID : 2 )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 34 , paramLen : 0 )
+C# > |   |   |   |   |   TypeRegister -> ArrayLength ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   ObjectPool -> Get ( index : 4 )
+C# > |   |   |   StaticCallbacks -> ConstructorWrap ( paramLen : 0 )
+C# > |   |   |   |   JsEnv -> InvokeConstructor ( callbackIdx : 4 , paramLen : 0 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Construct ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Construct
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   [?] -> TryGetValue
+C# > |   |   |   |   |   |   |   [?] -> FindEntry
+C# > |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   ObjectPool -> Add ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   ObjectPool -> AddToFreeList ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   |   Slot -> .ctor ( next : -2 , obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   [?] -> set_Item
+C# > |   |   |   |   |   |   |   |   [?] -> TryInsert
+C# > |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : PuertsTest.TestClass )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 39 , paramLen : 1 )
+C# > |   |   |   |   |   JsEnv -> LoadType ( paramLen : 1 )
+C# > |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 20 )
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 20 )
+C# > |   |   |   |   |   |   |   TypeRegister -> GetType ( className : PuertsTest.Callback1 , isQualifiedName : False )
+C# > |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> RegisterType ( includeNoPublic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DelegateConstructWrap -> .ctor
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 0 , fullName : System.Delegate, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : CreateDelegate )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : CreateDelegate , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : DynamicInvoke )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : DynamicInvoke , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Clone )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : Clone , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Equals )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : Equals , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetHashCode )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : GetHashCode , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetObjectData )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : GetObjectData , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetInvocationList )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : GetInvocationList , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Combine )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : Combine , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Remove )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : Remove , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : RemoveAll )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : RemoveAll , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : op_Equality )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : op_Equality , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : op_Inequality )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : op_Inequality , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetMethodInfo )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : GetMethodInfo , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Method )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 6 , name : Method , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_Method )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 6 , name : Method , isStatic : False , dontDelete : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : get_Target )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 6 , name : Target , isStatic : False , dontDelete : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 6 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   DelegateConstructWrap -> .ctor
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 6 , fullName : System.MulticastDelegate, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToArray
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> ToArray
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <CombinePredicates>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <CombinePredicates>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <CombinePredicates>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <GetMethodAndOverrideMethod>b__9_8
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Utils -> IsVirtualMethod
+C# > |   |   |   |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetObjectData )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : GetObjectData , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Equals )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : Equals , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetHashCode )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : GetHashCode , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : GetInvocationList )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : GetInvocationList , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : op_Equality )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : op_Equality , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : op_Inequality )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 7 , name : op_Inequality , isStatic : True )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 7 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# > |   |   |   |   |   |   |   |   |   DelegateConstructWrap -> .ctor
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddConstructor
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterClass ( BaseTypeId : 7 , fullName : PuertsTest.Callback1, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null )
+C# > |   |   |   |   |   |   |   |   |   Utils -> GetMethodAndOverrideMethod
+C# > |   |   |   |   |   |   |   |   |   Utils -> GetExtensionMethodsOf
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : Invoke )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 8 , name : Invoke , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : BeginInvoke )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 8 , name : BeginInvoke , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> .ctor ( name : EndInvoke )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterFunction ( classID : 8 , name : EndInvoke , isStatic : False )
+C# > |   |   |   |   |   |   |   |   |   JsEnv -> AddCallback
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> RegisterProperty ( classID : 8 , name : __p_innerType , isStatic : True , dontDelete : True )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 40 , paramLen : 1 )
+C# > |   |   |   |   |   JsEnv -> GetNestedTypes ( paramLen : 1 )
+C# > |   |   |   |   |   |   JsEnv -> GetTypeFromJs ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 20 )
+C# > |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 20 )
+C# > |   |   |   |   |   |   |   TypeRegister -> GetType ( className : PuertsTest.Callback1 , isQualifiedName : False )
+C# > |   |   |   |   |   |   StaticTranslate`1 -> DefaultPush ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__24_1
+C# > |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : System.Type[] )
+C# > |   |   |   |   |   |   |   |   |   [?] -> TryGetValue
+C# > |   |   |   |   |   |   |   |   |   |   [?] -> FindEntry
+C# > |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : System.Type[] )
+C# > |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> Equals ( o1 : System.Type[] , o2 : System.Type[] )
+C# > |   |   |   |   |   |   |   |   SetValueToResultImpl -> SetNativeObject ( classID : 2 )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 34 , paramLen : 0 )
+C# > |   |   |   |   |   TypeRegister -> ArrayLength ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   ObjectPool -> Get ( index : 4 )
+C# > |   |   |   StaticCallbacks -> ConstructorWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeConstructor ( callbackIdx : 7 , paramLen : 1 )
+C# > |   |   |   |   |   DelegateConstructWrap -> Construct ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__1
+C# > |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetFunction ( isByRef : False )
+C# > |   |   |   |   |   |   |   GenericDelegateFactory -> Create
+C# > |   |   |   |   |   |   |   |   GenericDelegateFactory -> PreventStripping ( obj :  )
+C# > |   |   |   |   |   |   |   |   DelegateCreatorTree -> Find
+C# > |   |   |   |   |   |   |   |   |   DelegateCreatorTree -> FindNode ( createIfNotExisted : False )
+C# > |   |   |   |   |   |   |   |   |   GenericDelegateFactory -> ToGenericDelegate
+C# > |   |   |   |   |   |   |   |   |   |   GenericDelegate -> .ctor
+C# > |   |   |   |   |   |   |   |   |   |   |   JsEnv -> IncFuncRef
+C# > |   |   |   |   |   |   |   |   |   GenericDelegateFactory -> CreateDelegate
+C# > |   |   |   |   |   |   |   |   |   |   GenericDelegate -> TryGetDelegate
+C# > |   |   |   |   |   |   |   |   |   |   GenericDelegate -> AddDelegate
+C# > |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : PuertsTest.Callback1 )
+C# > |   |   |   |   |   |   [?] -> TryGetValue
+C# > |   |   |   |   |   |   |   [?] -> FindEntry
+C# > |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : PuertsTest.Callback1 )
+C# > |   |   |   |   |   |   ObjectPool -> Add ( obj : PuertsTest.Callback1 )
+C# > |   |   |   |   |   |   |   ObjectPool -> AddToFreeList ( obj : PuertsTest.Callback1 )
+C# > |   |   |   |   |   |   |   |   Slot -> .ctor ( next : -2 , obj : PuertsTest.Callback1 )
+C# > |   |   |   |   |   |   |   [?] -> set_Item
+C# > |   |   |   |   |   |   |   |   [?] -> TryInsert
+C# > |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : PuertsTest.Callback1 )
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 68 , paramLen : 1 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetTypeId ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> IsArray ( typeId : 8 )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( typeId : 8 )
+C# > |   |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__1
+C# > |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetNativeObject ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 8 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   TestClass -> AddEventCallback1 callback1
+C# > |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 70 , paramLen : 1 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__1
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetFunction ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GenericDelegateFactory -> Create
+C# > |   |   |   |   |   |   |   |   |   |   DelegateCreatorTree -> Find
+C# > |   |   |   |   |   |   |   |   |   |   |   DelegateCreatorTree -> FindNode ( createIfNotExisted : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   GenericDelegateFactory -> ToGenericDelegate
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> .ctor
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> IncFuncRef
+C# > |   |   |   |   |   |   |   |   |   |   |   GenericDelegateFactory -> CreateDelegate
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> TryGetDelegate
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> AddDelegate
+C# > |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   TestClass -> AddEventCallback2 callback2
+C# > |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 71 , paramLen : 0 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   TestClass -> Trigger
+C# > |   |   |   |   |   |   |   |   |   |   |   [?] -> Action
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> CheckLiveness
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> InvokeJSFunction ( argumentsLength : 1 , hasResult : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> InvokeJSFunction
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> PushJSFunctionArgumentsCallback ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <Action>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticTranslate`1 -> DefaultPush ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__24_1
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TypeRegister -> GetTypeId
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> FindOrAddObject ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> TryGetValue
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> FindEntry
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> GetHashCode ( obj : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ReferenceEqualsComparer -> Equals ( o1 : PuertsTest.TestClass , o2 : PuertsTest.TestClass )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SetValueToArgumentImpl -> SetNativeObject ( classID : 5 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 72 , paramLen : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TestClass -> Foo
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> CheckLiveness
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> InvokeJSFunction ( argumentsLength : 1 , hasResult : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> InvokeJSFunction
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> PushJSFunctionArgumentsCallback ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <Action>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushInt32 ( jsEnvIdx : 0 , i : 1024 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SetValueToArgumentImpl -> SetNumber
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 47 , paramLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 4 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 4 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 69 , paramLen : 1 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetTypeId ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> IsArray ( typeId : 8 )
+C# > |   |   |   |   |   |   |   |   |   TypeRegister -> GetType ( typeId : 8 )
+C# > |   |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__1
+C# > |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   [?] -> <MakeTranslateFunc>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetNativeObject ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 8 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   TestClass -> RemoveEventCallback1 callback1
+C# > |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 0 )
+C# > |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 71 , paramLen : 0 )
+C# > |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 0 )
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   GeneralGetterManager -> GetSelf
+C# > |   |   |   |   |   |   |   |   ObjectPool -> Get ( index : 6 )
+C# > |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   [?] -> Invoke
+C# > |   |   |   |   |   |   |   |   |   [?] -> InternalInvoke
+C# > |   |   |   |   |   |   |   |   |   |   TestClass -> Trigger
+C# > |   |   |   |   |   |   |   |   |   |   |   [?] -> Action
+C# > |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> CheckLiveness
+C# > |   |   |   |   |   |   |   |   |   |   |   |   GenericDelegate -> InvokeJSFunction ( argumentsLength : 1 , hasResult : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> InvokeJSFunction
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> PushJSFunctionArgumentsCallback ( jsEnvIdx : 0 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   [?] -> <Action>b__0
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> PushInt32 ( jsEnvIdx : 0 , i : 1024 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SetValueToArgumentImpl -> SetNumber
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   StaticCallbacks -> JsEnvCallbackWrap ( paramLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   JsEnv -> InvokeCallback ( callbackIdx : 47 , paramLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MethodReflectionWrap -> Invoke ( argumentsLen : 1 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> IsMatch
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OverloadReflectionWrap -> Invoke
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> GetArguments
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> AnyTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetJsValueType ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralGetterManager -> StringTranslator ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PrimitiveTypeTranslate -> GetString ( jsEnvIdx : 0 , isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GetValueFromArgumentImpl -> GetString ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromValue ( isByRef : False )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetStringFromNative ( strlen : 4 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PuertsDLL -> GetTempNativeStringBuff ( strlen : 4 )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# > |   |   |   |   |   |   |   Parameters -> FillByRefParameters
+C# > |   |   |   |   |   |   |   GeneralSetterManager -> VoidTranslator ( jsEnvIdx : 0 , obj :  )
+C# > |   |   |   |   |   |   |   Parameters -> ClearArguments
+C# >   Callback -> OnDestroy
+C# > JsEnv -> Dispose
+C# > |   JsEnv -> Dispose ( dispose : True )
+C# > JsEnv -> DecFuncRef
+C# > JsEnv -> Dispose ( dispose : True )
+C# > JsEnv -> DecFuncRef
